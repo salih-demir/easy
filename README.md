@@ -1,5 +1,7 @@
 # Easy Android Application
 
+[Uygulama linki](https://github.com/salih-demir/easy/blob/master/easy.apk)
+
 ## Uygulamanın Fonksiyonları:
 
 - Veri yenileme mekanizması (swipe to refresh)

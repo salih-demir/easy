@@ -26,7 +26,7 @@
 ## Uygulamanın Mimarisi
 - 100% Kotlin ile yazıldı.
 - Tema değişimi ile uyumlu, renklerin ve temaların hepsi referans olarak girildi.
-- Android context ile uyumlu çalışan __AppModule__ yapısı
+- Android context ile uyumlu çalışan [__AppModule__](https://github.com/salih-demir/easy/blob/master/code/app/src/main/java/com/cascade/easy/app/AppModule.kt) yapısı
 - Kullanılan kütüphanelerin ProGuard konfigürasyonu yapılmıştır.
 - Verilerin korunumu LiveData kullanılarak sağlanmıştır.
 - Android Lint 0 hata oranı (false positive durumlar hariç)

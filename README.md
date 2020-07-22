@@ -1,6 +1,6 @@
 # Easy Android Application
 
-[Uygulama linki](https://github.com/salih-demir/easy/blob/master/easy.apk)
+[Uygulama linki](https://github.com/salih-demir/easy/blob/master/easy.apk?raw=true)
 
 ## Uygulamanın Fonksiyonları:
 

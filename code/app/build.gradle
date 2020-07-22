@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'jacoco'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.cascade.easy"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0.0"
+
+        buildConfigField 'String', 'SERVER_URL', '"https://api.easy.com/"'
+    }
+
+    buildTypes {
+        debug {
+            def suffix = "." + name
+            applicationIdSuffix suffix
+
+            def mockServerEnabled = true
+            manifestPlaceholders = [usesCleartextTraffic: mockServerEnabled]
+            buildConfigField 'boolean', 'MOCK_SERVER_ENABLED', mockServerEnabled.toString()
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            def mockServerEnabled = true
+            manifestPlaceholders = [usesCleartextTraffic: mockServerEnabled]
+            buildConfigField 'boolean', 'MOCK_SERVER_ENABLED', mockServerEnabled.toString()
+        }
+    }
+    compileOptions {
+        sourceCompatibility = java_version
+        targetCompatibility = java_version
+    }
+    kotlinOptions {
+        jvmTarget = java_version.toString()
+    }
+
+    afterEvaluate {
+        applicationVariants.all { variant ->
+            def variantName = variant.name.capitalize()
+            def coverageTaskName = "coverage${variantName}Report"
+            def dependentTaskName = "test${variantName}UnitTest"
+
+            task(coverageTaskName, type: JacocoReport, dependsOn: [dependentTaskName]) {
+                def fileFilter = ['**/R.class',
+                                  '**/R$*.class',
+                                  '**/BuildConfig.*',
+                                  '**/Manifest*.*',
+                                  '**/*Test*.*',
+                                  'android/**/*.*',
+                                  '**/data/models/*']
+                def debugTree = fileTree(dir: "${buildDir}/intermediates/classes/debug", excludes: fileFilter)
+                def mainSrc = "${project.projectDir}/src/main/java"
+
+                additionalSourceDirs files([mainSrc])
+                additionalClassDirs files([debugTree])
+                executionData fileTree(dir: "$buildDir", includes: [
+                        "jacoco/" + dependentTaskName + ".exec",
+                        "outputs/code-coverage/connected/*coverage.ec"
+                ])
+
+
+                reports {
+                    xml.enabled = true
+                    html.enabled = true
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.core:core-ktx:1.3.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'com.airbnb.android:lottie:3.4.1'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.6.0'
+    implementation 'com.squareup.okhttp3:mockwebserver:4.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}

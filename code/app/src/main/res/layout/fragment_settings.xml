@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:padding="@dimen/content_spacing"
+    android:useDefaultMargins="true">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextView.Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:text="@string/label_settings_language" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupLanguages"
+        style="@style/TextView.Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="end"
+        android:orientation="horizontal" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextView.Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:text="@string/label_settings_night_mode" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupNightModes"
+        style="@style/TextView.Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="end"
+        android:orientation="horizontal" />
+</GridLayout>

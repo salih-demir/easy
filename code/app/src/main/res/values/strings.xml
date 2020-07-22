@@ -1,0 +1,29 @@
+<resources>
+    <string name="label_ok">OK</string>
+
+    <string name="label_enabled">Enabled</string>
+    <string name="label_disabled">Disabled</string>
+    <string name="label_system">System</string>
+
+    <string name="label_about">About</string>
+    <string name="label_help">Help</string>
+    <string name="label_try_again">Try Again</string>
+    <string name="label_setup">Install</string>
+    <string name="label_search">Search a comment</string>
+    <string name="label_sort_by_default">Default</string>
+    <string name="label_sort_by_comment_length">Comment Length</string>
+    <string name="label_sort_by_rating">Rating</string>
+
+    <string name="label_settings_language">Language</string>
+    <string name="label_settings_night_mode">Night Mode</string>
+
+    <string name="title_feedback_list">Feedback List</string>
+    <string name="title_content_settings">Settings</string>
+    <string name="title_sort_by">Sort By</string>
+
+    <string name="message_about">Easy About</string>
+    <string name="message_help">Easy Help</string>
+    <string name="message_no_comment_present">No Comment Present</string>
+    <string name="message_no_tag_present">No Tag Present</string>
+    <string name="message_google_maps_not_found">Google Maps not found. Please install.</string>
+</resources>

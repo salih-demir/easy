@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name" translatable="false">Easy</string>
+    <string name="label_dummy" translatable="false">Dummy Label</string>
+</resources>

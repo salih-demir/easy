@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Activity Themes -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:navigationBarColor">?android:statusBarColor</item>
+        <item name="android:statusBarColor">?colorPrimary</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textAppearanceSmall">@style/TextAppearance.Small</item>
+        <item name="android:textAppearanceMedium">@style/TextAppearance.Medium</item>
+        <item name="android:textAppearanceLarge">@style/TextAppearance.Large</item>
+        <item name="android:textAppearanceButton">@style/TextAppearance.Button</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorOnPrimary">?android:textColorPrimary</item>
+        <item name="colorIcon">?colorAccent</item>
+
+        <item name="actionBarStyle">@style/ActionBar</item>
+        <item name="actionBarTabStyle">@style/TabLayout.ActionBar</item>
+        <item name="actionBarWidgetTheme">@style/ActionBarWidgetTheme</item>
+        <item name="actionButtonStyle">@style/Button.Action</item>
+        <item name="actionOverflowButtonStyle">@style/Button.Action.Overflow</item>
+        <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+        <item name="borderlessButtonStyle">@style/Button.Borderless</item>
+        <item name="fontFamily">@raw/font_titillium_regular</item>
+        <item name="imageButtonStyle">@style/ImageButton</item>
+        <item name="radioButtonStyle">@style/RadioButton</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Button</item>
+    </style>
+
+    <style name="AppTheme.Splash">
+        <item name="android:navigationBarColor">?android:colorBackground</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Component Themes -->
+    <style name="Theme" parent="AppTheme" />
+
+    <style name="Theme.Button" />
+
+    <style name="Theme.EditText" />
+
+    <style name="Theme.Button.FeedbackItem">
+        <item name="colorButtonNormal">@color/transparent</item>
+    </style>
+
+    <style name="Theme.EditText.Search">
+        <item name="colorIcon">@color/gray</item>
+    </style>
+
+    <style name="Theme.Button.Filter">
+        <item name="colorIcon">@color/white</item>
+    </style>
+
+    <!-- References Themes -->
+    <style name="ActionBarWidgetTheme">
+        <item name="colorIcon">?android:textColorPrimary</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Button.Tab</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+        <item name="android:windowMinWidthMajor">75%</item>
+        <item name="android:windowMinWidthMinor">65%</item>
+    </style>
+</resources>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="label_ok">Tamam</string>
+
+    <string name="label_enabled">Açık</string>
+    <string name="label_disabled">Kapalı</string>
+    <string name="label_system">Sistem</string>
+
+    <string name="label_about">Hakkında</string>
+    <string name="label_help">Yardım</string>
+    <string name="label_try_again">Tekrar Dene</string>
+    <string name="label_setup">Yükle</string>
+    <string name="label_search">Yorum ara</string>
+    <string name="label_sort_by_default">Varsayılan</string>
+    <string name="label_sort_by_comment_length">Yorum Uzunluğuna Göre</string>
+    <string name="label_sort_by_rating">Puana Göre</string>
+
+    <string name="label_settings_language">Dil</string>
+    <string name="label_settings_night_mode">Gece Modu</string>
+
+    <string name="title_feedback_list">Geri Bildirimler</string>
+    <string name="title_content_settings">Ayarlar</string>
+    <string name="title_sort_by">Sırala</string>
+
+    <string name="message_about">Easy Hakkında</string>
+    <string name="message_help">Easy Yardım</string>
+    <string name="message_no_comment_present">Yorum bulunmamaktadır.</string>
+    <string name="message_no_tag_present">Etiket bulunmamaktadır.</string>
+    <string name="message_google_maps_not_found">Google Haritalar bulunamadı. Lüften haritalar uygulamasını yükleyin.</string>
+</resources>

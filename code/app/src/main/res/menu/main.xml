@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/groupFeedbackList">
+        <item
+            android:id="@+id/itemHelp"
+            android:icon="@drawable/ic_help"
+            android:title="@string/label_help"
+            app:showAsAction="ifRoom|withText" />
+    </group>
+    <group android:id="@+id/groupSettings">
+        <item
+            android:id="@+id/itemAbout"
+            android:icon="@drawable/ic_info"
+            android:title="@string/label_about"
+            app:showAsAction="ifRoom|withText" />
+    </group>
+</menu>

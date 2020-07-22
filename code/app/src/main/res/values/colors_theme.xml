@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/blue</color>
+    <color name="colorPrimaryDark">@color/blue_dark</color>
+    <color name="colorAccent">@color/blue_bright</color>
+
+    <color name="colorToastBackground">#83707070</color>
+    <color name="colorToastText">#FFFFFF</color>
+</resources>

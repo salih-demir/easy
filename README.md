@@ -11,7 +11,7 @@
 - Yorum sırası değiştirme (uzun basılı tutunca)
 - Yorum okuma (Yoruma basıldığında yorum sesli olarak kendi dilinde okunuyor.)
 - Ayarlar (Gece modu ve dil değiştirme)
-- Hızlı aksiyonlar (Uygulama ikonuna uzun basınca çıkıyor.
+- Hızlı aksiyonlar (Uygulama ikonuna uzun basınca çıkıyor.)
 - Hareketli karşılama ekranı
 
 ## Uygulamanın Teknik Altyapısı
